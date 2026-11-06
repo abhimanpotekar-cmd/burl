@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "default_browser": "edge",
+  "browsers": {
+    "chrome": {
+      "name": "Google Chrome",
+      "exe_path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "args": ""
+    },
+    "edge": {
+      "name": "Microsoft Edge",
+      "exe_path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+      "args": ""
+    },
+    "brave": {
+      "name": "Brave Browser",
+      "exe_path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "args": ""
+    },
+    "firefox": {
+      "name": "Mozilla Firefox",
+      "exe_path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "args": ""
+    }
+  },
+  "rules": [
+    {
+      "name": "Coding & Tech",
+      "enabled": true,
+      "domains": [
+        "github.com",
+        "gitlab.com",
+        "stackoverflow.com",
+        "leetcode.com"
+      ],
+      "fallback_chain": ["firefox", "chrome", "edge"]
+    },
+    {
+      "name": "Assessments & Strict Exams",
+      "enabled": true,
+      "domains": [
+        "shl.com",
+        "hackerrank.com",
+        "codility.com"
+      ],
+      "fallback_chain": ["chrome", "edge"]
+    }
+  ]
+}
