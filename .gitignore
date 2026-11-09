@@ -1,0 +1,14 @@
+# CLion / IntelliJ
+.idea/
+
+# Build directories
+build/
+cmake-build-*/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+
+
+*.ninja
+.ninja_*

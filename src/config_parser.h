@@ -16,14 +16,14 @@ namespace burl {
         std::wstring args;
     };
     struct Rule {
-        std::wstring name;
-        bool enabled;
+        std::string name;
+        bool enabled = true;
         std::vector<std::string> domains;
         std::vector<std::string> fallback_chain;
-
     };
+
     struct AppConfig {
-        int version;
+        int version = 1;
         std::string default_browser;
         std::unordered_map<std::string, BrowserConfig> browsers;
         std::vector<Rule> rules;
@@ -41,4 +41,5 @@ namespace burl {
 
         static bool SaveConfig(const AppConfig& config);
     };
+    
 }
