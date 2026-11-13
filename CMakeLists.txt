@@ -47,6 +47,8 @@ if(NOT imgui_POPULATED)
     target_link_libraries(imgui PUBLIC
             d3d11
             dxgi
+            dwmapi
+            d3dcompiler
     )
 endif()
 
@@ -102,6 +104,8 @@ target_link_libraries(burl PRIVATE
         ole32
         d3d11
         dxgi
+        dwmapi
+        d3dcompiler
 )
 
 
